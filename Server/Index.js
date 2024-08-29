@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const info = require('./Routes/route');
 const cookieParser = require('cookie-parser'); // Add this line
+const DB = "mongodb+srv://pavendra21:psr123456@cluster1.4lk1w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+
 
  
 // const Recipe = require('./Model/Schema');
@@ -23,7 +25,7 @@ app.use(cookieParser());
  
 // Connections
 
-mongoose.connect('mongodb://localhost:27017/siterecipe', {
+mongoose.connect(DB, {
      
 }).then(() => {
     console.log('Connected to MongoDB');
