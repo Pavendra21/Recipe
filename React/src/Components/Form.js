@@ -35,6 +35,7 @@ const RecipeForm = () => {
     };
 
     // Send recipe to backend
+
     fetch('http://localhost:8000/recipe', {
       method: 'POST',
       headers: {
@@ -46,7 +47,9 @@ const RecipeForm = () => {
       .then(data => {
         console.log('Recipe submitted:', data);
         setSubmitted(true);
+
         // Clear form after submission
+         
         setTitle('');
         setIngredients([]);
         setInstructions([]);

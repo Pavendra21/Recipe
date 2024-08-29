@@ -12,8 +12,8 @@ const Landing = () => {
        
     </div>
   </div>
-  <Cards/>
-     
+   <Cards/>
+   
      </>
   )
 }

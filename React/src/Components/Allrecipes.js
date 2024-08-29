@@ -57,7 +57,7 @@ const handleDelete = async (recipeId) => {
     await axios.delete(`http://localhost:8000/Allrecipes/${recipeId}`);
     setRecipeData(recipeData.filter(recipe => recipe._id !== recipeId));
     setLoading(true)
-    navigate(`/`);
+    navigate(`/Landing`);
   } catch (error) {
     console.error('Error deleting recipe:', error);
   }
