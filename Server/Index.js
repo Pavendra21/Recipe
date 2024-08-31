@@ -15,9 +15,14 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://recipe-xers.vercel.app', // Replace with your frontend URL
+  origin: 'https://recipe-xers.vercel.app', // Your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
     credentials: true, // This is the key part
 }));
+
+
+ 
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
