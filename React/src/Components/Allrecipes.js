@@ -31,7 +31,7 @@ useEffect(() =>{
   
   const fetchData  = async () => {
     
-    await axios.get(`http://localhost:8000/Allrecipes/${rcategory}`)
+    await axios.get(`https://recipe-theta-six.vercel.app/Allrecipes/${rcategory}`)
     .then((response) =>{
       
  
@@ -54,7 +54,7 @@ fetchData();
 
 const handleDelete = async (recipeId) => {
   try {
-    await axios.delete(`http://localhost:8000/Allrecipes/${recipeId}`);
+    await axios.delete(`https://recipe-theta-six.vercel.app/Allrecipes/${recipeId}`);
     setRecipeData(recipeData.filter(recipe => recipe._id !== recipeId));
     setLoading(true)
     navigate(`/Landing`);
