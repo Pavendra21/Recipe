@@ -7,9 +7,9 @@ const Contact = () => {
     let form = event.target;
     let formData = new FormData(form);
     let formObj = Object.fromEntries(formData.entries());
-     
+     axios.defaults.withCrediantials = true ;
     try {
-      const response = await axios.post('http://localhost:8000/contact', formObj);
+      const response = await axios.post('https://recipe-theta-six.vercel.app//contact', formObj);
       if (response.data.status === "OK") {
         alert('Your message has been sent successfully!');
       }
