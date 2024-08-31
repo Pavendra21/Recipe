@@ -42,7 +42,7 @@ const SignUp = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post('http://localhost:8000/signup', formData);
+        const response = await axios.post('https://recipe-theta-six.vercel.app/signup', formData);
         console.log('Success:', response.data);
         navigate('/Login');
       } catch (err) {
