@@ -36,7 +36,7 @@ const RecipeForm = () => {
 
     // Send recipe to backend
 
-    fetch('http://localhost:8000/recipe', {
+    fetch('https://recipe-theta-six.vercel.app/recipe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
