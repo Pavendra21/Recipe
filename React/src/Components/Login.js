@@ -39,7 +39,7 @@ const Login = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post('http://localhost:8000/login', formData, { withCredentials: true });
+        const response = await axios.post('https://recipe-theta-six.vercel.app/login', formData, { withCredentials: true });
         if (response.status === 200 && response.data.status === 'success') {
           navigate('/Landing');
         }
