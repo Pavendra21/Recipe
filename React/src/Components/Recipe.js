@@ -9,7 +9,7 @@ const Recipe = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/allrecipes/${rcategory}/${recipeId}`);
+        const response = await axios.get(`https://recipe-theta-six.vercel.app/allrecipes/${rcategory}/${recipeId}`);
          setMainData(response.data);
       } catch (error) {
         console.error('Error fetching recipe:', error);
