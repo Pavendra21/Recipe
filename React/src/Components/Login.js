@@ -39,7 +39,7 @@ const Login = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post('http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app//login', formData, { withCredentials: true });
+        const response = await axios.post('http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/login', formData, { withCredentials: true });
         if (response.status === 200 && response.data.status === 'success') {
           navigate('/Landing');
         }
