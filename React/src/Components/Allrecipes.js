@@ -31,7 +31,7 @@ useEffect(() =>{
   
   const fetchData  = async () => {
     
-    await axios.get(`recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${rcategory}`)
+    await axios.get(`http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${rcategory}`)
     .then((response) =>{
       
  
