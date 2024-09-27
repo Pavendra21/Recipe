@@ -9,7 +9,7 @@ const Contact = () => {
     let formObj = Object.fromEntries(formData.entries());
      axios.defaults.withCrediantials = true ;
     try {
-      const response = await axios.post('recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/contact', formObj);
+      const response = await axios.post('http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/contact', formObj);
       if (response.data.status === "OK") {
         alert('Your message has been sent successfully!');
       }
