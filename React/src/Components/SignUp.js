@@ -42,7 +42,7 @@ const SignUp = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await axios.post('https://recipe-theta-six.vercel.app/signup', formData,{ withCredentials: true });
+        const response = await axios.post('http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/signup', formData,{ withCredentials: true });
         console.log('Success:', response.data);
         navigate('/Login');
       } catch (err) {
