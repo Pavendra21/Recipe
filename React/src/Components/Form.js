@@ -36,7 +36,7 @@ const RecipeForm = () => {
 
     // Send recipe to backend
 
-    fetch('recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/recipe', {
+    fetch('http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/recipe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
