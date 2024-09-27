@@ -54,7 +54,7 @@ fetchData();
 
 const handleDelete = async (recipeId) => {
   try {
-    await axios.delete(`recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${recipeId}`);
+    await axios.delete(`http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${recipeId}`);
     setRecipeData(recipeData.filter(recipe => recipe._id !== recipeId));
     setLoading(true)
     navigate(`/Landing`);
