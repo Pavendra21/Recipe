@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://recipe-xers.vercel.app', // Your frontend URL
+  origin: 'https://my-recipe-site.vercel.app/', // Your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, // This is the key part
