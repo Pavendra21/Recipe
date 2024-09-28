@@ -9,7 +9,7 @@ const Recipe = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/allrecipes/${rcategory}/${recipeId}`);
+        const response = await axios.get(`https://recipe-production-505f.up.railway.app/allrecipes/${rcategory}/${recipeId}`);
          setMainData(response.data);
       } catch (error) {
         console.error('Error fetching recipe:', error);
