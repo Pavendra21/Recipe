@@ -15,11 +15,12 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://my-recipe-site.vercel.app/', // Your frontend URL
+  origin: 'https://my-recipe-site.vercel.app', // Remove trailing slash
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true, // This is the key part
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept'], // Optional: add headers you expect
+  credentials: true, // This is the key part
 }));
+
 
 
  
