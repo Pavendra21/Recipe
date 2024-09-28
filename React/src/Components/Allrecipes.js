@@ -31,7 +31,7 @@ useEffect(() =>{
   
   const fetchData  = async () => {
     
-    await axios.get(`http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${rcategory}`)
+    await axios.get(`https://recipe-production-505f.up.railway.app/${rcategory}`)
     .then((response) =>{
       
  
@@ -54,7 +54,7 @@ fetchData();
 
 const handleDelete = async (recipeId) => {
   try {
-    await axios.delete(`http://recipe-site-1a58t5in4-pavendra-singh-rajputs-projects.vercel.app/${recipeId}`);
+    await axios.delete(`https://recipe-production-505f.up.railway.app/${recipeId}`);
     setRecipeData(recipeData.filter(recipe => recipe._id !== recipeId));
     setLoading(true)
     navigate(`/Landing`);
