@@ -31,7 +31,7 @@ useEffect(() =>{
   
   const fetchData  = async () => {
     
-    await axios.get(`https://recipe-production-505f.up.railway.app/${rcategory}`)
+    await axios.get(`https://recipe-production-505f.up.railway.app/allrecipes/${rcategory}`)
     .then((response) =>{
       
  
