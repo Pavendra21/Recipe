@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+     "bcrypt": "^5.1.0",       // Version 5.1.0 is the latest as of now, you can update if needed
+  "validator": "^13.9.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
