@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: 'https://recipe-chi-seven.vercel.app, // Remove trailing slash
+  origin: 'https://recipe-chi-seven.vercel.app', // Remove trailing slash
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept'], // Optional: add headers you expect
   credentials: true, // This is the key part
