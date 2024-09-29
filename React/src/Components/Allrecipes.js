@@ -54,7 +54,7 @@ fetchData();
 
 const handleDelete = async (recipeId) => {
   try {
-    await axios.delete(`https://recipe-production-505f.up.railway.app/${recipeId}`);
+    await axios.delete(`https://recipe-production-505f.up.railway.app/allrecipes/${recipeId}`);
     setRecipeData(recipeData.filter(recipe => recipe._id !== recipeId));
     setLoading(true)
     navigate(`/Landing`);
